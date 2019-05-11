@@ -140,6 +140,13 @@ public class MainActivity extends BaseActivity {
 
         pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
         act.viewPager.setAdapter(pagerAdapter);
+
+
+    }
+
+    public void setCustomTitle(String inputTitle){
+        setTitle(String.format("입력값: %s",inputTitle));
+        act.textEdt.setText(inputTitle);
     }
 
     @Override
